@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HMIS Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dropdown">
+    <button class="dropbtn">MENU</button>
+    <div class="dropdown-content">
+      <a href="Dashboard.html">Dashboard</a>
+      <a href="form.html">Form</a>
+  
+    </div>
+  </div>
+  <form id="HmisForm">
+    <label for="patientID">Patient ID:</label>
+    <input type="text" id="participantID" name="patientID" required>
+
+    <label for=" name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="timestamp">Date:</label>
+    <input type="datetime-local" id="timestamp" name="timestamp" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+  
+
+    <button type="button" onclick="submitForm()">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
